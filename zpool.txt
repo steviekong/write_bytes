@@ -1,0 +1,52 @@
+raidpool:
+    version: 5000
+    name: 'raidpool'
+    state: 0
+    txg: 55
+    pool_guid: 15309505721280792466
+    errata: 0
+    hostid: 2284974776
+    hostname: 'sid-server'
+    com.delphix:has_per_vdev_zaps
+    vdev_children: 1
+    vdev_tree:
+        type: 'root'
+        id: 0
+        guid: 15309505721280792466
+        create_txg: 4
+        children[0]:
+            type: 'raidz'
+            id: 0
+            guid: 1658437435890408324
+            nparity: 1
+            metaslab_array: 69
+            metaslab_shift: 24
+            ashift: 9
+            asize: 187170816
+            is_log: 0
+            create_txg: 4
+            com.delphix:vdev_zap_top: 65
+            children[0]:
+                type: 'file'
+                id: 0
+                guid: 563493256037710814
+                path: '/home/steviekong/590k/write_bytes/01.dd'
+                create_txg: 4
+                com.delphix:vdev_zap_leaf: 66
+            children[1]:
+                type: 'file'
+                id: 1
+                guid: 6907840549355079621
+                path: '/home/steviekong/590k/write_bytes/02.dd'
+                create_txg: 4
+                com.delphix:vdev_zap_leaf: 67
+            children[2]:
+                type: 'file'
+                id: 2
+                guid: 14370248076321712164
+                path: '/home/steviekong/590k/write_bytes/03.dd'
+                create_txg: 4
+                com.delphix:vdev_zap_leaf: 68
+    features_for_read:
+        com.delphix:hole_birth
+        com.delphix:embedded_data

@@ -1,0 +1,7 @@
+r/r 4:	FileD.dat
+r/r 6:	FileB.dat
+r/r 8:	FileE.dat
+v/v 326979:	$MBR
+v/v 326980:	$FAT1
+v/v 326981:	$FAT2
+V/V 326982:	$OrphanFiles
